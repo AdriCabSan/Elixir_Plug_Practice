@@ -14,8 +14,8 @@ defmodule PlugEx.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger,:plug,:cowboy],
-      mod: {PlugEx,[]},
+      extra_applications: [:logger,:plug_cowboy],
+      mod: {PlugEx, []},
       env: [cowboy_port: 8000]
     ]
   end
